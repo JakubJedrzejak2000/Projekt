@@ -35,7 +35,7 @@ public class Action
                                 + enemies.get(level).getHp());
                         break;
                     case "Dobule attack":
-                        hero.get(0).setHp(hero.get(0).getHp() - enemies.get(0).getDmg());
+                        hero.get(0).setHp(hero.get(0).getHp() - enemies.get(level).getDmg());
                         enemies.get(level).setHp(enemies.get(level).getHp() - skill.get(0).DoubleAttack());
                         System.out.println("Twoje życie: " + hero.get(0).getHp() + "\nŻycie przeciwnika: "
                                 + enemies.get(level).getHp());
